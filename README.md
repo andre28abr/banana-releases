@@ -8,11 +8,11 @@ Distribuição oficial dos binários do **Banana**, um gestor de notas desktop l
 
 ## 📥 Baixar
 
-Última versão: **[v0.1.2](https://github.com/andre28abr/banana-releases/releases/latest)** (pré-release)
+Última versão: **[v0.1.3](https://github.com/andre28abr/banana-releases/releases/latest)** (pré-release)
 
 | Plataforma | Arquivo | Status |
 |---|---|---|
-| 🍎 **macOS** Apple Silicon (M1/M2/M3/M4) | `Banana_0.1.2_aarch64.dmg` | ✅ disponível |
+| 🍎 **macOS** Apple Silicon (M1/M2/M3/M4) | `Banana_0.1.3_aarch64.dmg` | ✅ disponível |
 | 🍎 **macOS** Intel | `Banana_x.y.z_x64.dmg` | ⏳ futuro |
 | 🐧 **Linux** Flatpak (Flathub) | — | ⏳ futuro |
 | 🐧 **Linux** AppImage | `Banana_x.y.z.AppImage` | ⏳ futuro |
@@ -22,7 +22,8 @@ Distribuição oficial dos binários do **Banana**, um gestor de notas desktop l
 
 | Versão | Data | Destaques |
 |---|---|---|
-| **[v0.1.2](https://github.com/andre28abr/banana-releases/releases/tag/v0.1.2)** | 2026-05-17 | 🔐 Notas com senha (Fase 1 do plano de cripto) — AES-256-GCM + Argon2id, design key-slots (LUKS/FileVault style), recovery key obrigatória, formato versionado, 11 testes Rust novos |
+| **[v0.1.3](https://github.com/andre28abr/banana-releases/releases/tag/v0.1.3)** | 2026-05-18 | 🔐 Fase 3 cripto (vault inteiro) · 💬 Comentários inline `{? texto}` estilo Acrobat · 🗃️ Múltiplos cofres + recentes · 🍌 Ícone novo · 🛠️ Qualidade open source (ESLint + Clippy + CI + LICENSE/CONTRIBUTING/SECURITY) · 316 testes (de 111) |
+| [v0.1.2](https://github.com/andre28abr/banana-releases/releases/tag/v0.1.2) | 2026-05-17 | 🔐 Notas com senha (Fase 1 do plano de cripto) — AES-256-GCM + Argon2id, design key-slots (LUKS/FileVault style), recovery key obrigatória, formato versionado, 11 testes Rust novos |
 | [v0.1.1](https://github.com/andre28abr/banana-releases/releases/tag/v0.1.1) | 2026-05-17 | Auditoria de segurança (DOMPurify + path traversal fixes) · Export PDF vetorial nativo (NSPrintOperation) · Mermaid · Copy as HTML · Histórico de notas · Apresentação · Wikilinks · 70 testes Vitest |
 | [v0.1.0](https://github.com/andre28abr/banana-releases/releases/tag/v0.1.0) | 2026-05-15 | Primeira pré-release pública — editor MD 4 modos, 70+ linguagens de código, viewer PDF, 8 temas, modo Projeto |
 
