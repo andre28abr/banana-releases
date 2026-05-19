@@ -17,7 +17,8 @@ Distribuição oficial dos binários do **Banana**, um gestor de notas desktop l
 | 🪟 **Windows** x64 (MSI installer) | `Banana_0.1.4_x64_en-US.msi` | ⚠️ Experimental |
 | 🐧 **Linux** x64 (Debian/Ubuntu) | `Banana_0.1.4_amd64.deb` | ⚠️ Experimental |
 | 🐧 **Linux** x64 (universal AppImage) | `Banana_0.1.4_amd64.AppImage` | ⚠️ Experimental |
-| 🐧 **Linux** Flatpak (single-file) | `Banana_0.1.4_x64.flatpak` | ⚠️ Experimental |
+| 🐧 **Linux** Flatpak x86_64 (Intel/AMD) | `Banana_0.1.4_x64.flatpak` | ⚠️ Experimental · **autor testou nessa** |
+| 🐧 **Linux** Flatpak aarch64 (ARM, ex: VM em Mac Apple Silicon) | `Banana_0.1.4_arm64.flatpak` | ⚠️ Experimental |
 | 🍎 **macOS** Intel | — | ⏳ futuro |
 | 🐧 **Linux** Flatpak no Flathub | — | ⏳ futuro (depende de aprovação) |
 
@@ -79,8 +80,24 @@ chmod +x Banana_0.1.4_amd64.AppImage
 ```
 
 ### Flatpak (single-file, qualquer distro com Flatpak instalado)
+
+Escolha o flatpak da arquitetura da sua máquina/VM. Pra descobrir, rode:
 ```bash
+uname -m
+```
+
+- **`x86_64`** (Intel/AMD comum) → use `Banana_0.1.4_x64.flatpak`
+- **`aarch64`** ou `arm64` (ARM — ex: VMs Linux em Mac Apple Silicon via UTM/Parallels/VMware Fusion) → use `Banana_0.1.4_arm64.flatpak`
+
+```bash
+# Adicionar Flathub (uma vez só) — precisa do runtime base
+flatpak remote-add --user --if-not-exists flathub \
+  https://flathub.org/repo/flathub.flatpakrepo
+
+# Instalar (substitua _x64 por _arm64 se for ARM)
 flatpak install --user Banana_0.1.4_x64.flatpak
+
+# Rodar
 flatpak run dev.banana.Banana
 ```
 
