@@ -16,9 +16,10 @@ Distribuição oficial dos binários do **Banana**, um gestor de notas desktop l
 | 🪟 **Windows** x64 (NSIS installer) | `Banana_0.1.4_x64-setup.exe` | ⚠️ Experimental |
 | 🪟 **Windows** x64 (MSI installer) | `Banana_0.1.4_x64_en-US.msi` | ⚠️ Experimental |
 | 🐧 **Linux** x64 (Debian/Ubuntu) | `Banana_0.1.4_amd64.deb` | ⚠️ Experimental |
-| 🐧 **Linux** x64 (universal) | `Banana_0.1.4_amd64.AppImage` | ⚠️ Experimental |
+| 🐧 **Linux** x64 (universal AppImage) | `Banana_0.1.4_amd64.AppImage` | ⚠️ Experimental |
+| 🐧 **Linux** Flatpak (single-file) | `Banana_0.1.4_x64.flatpak` | ⚠️ Experimental |
 | 🍎 **macOS** Intel | — | ⏳ futuro |
-| 🐧 **Linux** Flatpak (Flathub) | — | ⏳ futuro |
+| 🐧 **Linux** Flatpak no Flathub | — | ⏳ futuro (depende de aprovação) |
 
 > ⚠️ **Experimental** = build via CI verde mas sem teste manual em Windows/Linux pelo autor. Reporte bugs [aqui](https://github.com/andre28abr/banana/issues).
 
@@ -48,6 +49,43 @@ Distribuição oficial dos binários do **Banana**, um gestor de notas desktop l
 > ```
 
 A partir da segunda abertura, duplo clique funciona normalmente.
+
+---
+
+## 🪟 Instalação no Windows
+
+1. Baixe `Banana_0.1.4_x64-setup.exe` (NSIS — recomendado, mais leve) ou `Banana_0.1.4_x64_en-US.msi`
+2. Execute o instalador
+3. SmartScreen do Windows Defender vai avisar → clique em **"Mais informações"** → **"Executar mesmo assim"**
+
+> O app ainda não é assinado pela Microsoft (Authenticode certificate custa ~$200/ano).
+> Esse aviso some quando o autor obter o certificado.
+
+---
+
+## 🐧 Instalação no Linux
+
+### Debian/Ubuntu (.deb)
+```bash
+sudo dpkg -i Banana_0.1.4_amd64.deb
+# Se reclamar de deps faltando:
+sudo apt-get install -f
+```
+
+### Qualquer distro (.AppImage)
+```bash
+chmod +x Banana_0.1.4_amd64.AppImage
+./Banana_0.1.4_amd64.AppImage
+```
+
+### Flatpak (single-file, qualquer distro com Flatpak instalado)
+```bash
+flatpak install --user Banana_0.1.4_x64.flatpak
+flatpak run dev.banana.Banana
+```
+
+> Flatpak é o formato preferível pra distros recentes (Fedora, Ubuntu 22+, Arch, etc) —
+> isola o app em sandbox e atualiza sem mexer no sistema.
 
 ---
 
