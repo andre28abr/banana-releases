@@ -8,17 +8,17 @@ Distribuição oficial dos binários do **Banana**, um gestor de notas desktop l
 
 ## 📥 Baixar
 
-Última versão: **[v0.1.4](https://github.com/andre28abr/banana-releases/releases/latest)** (pré-release · **agora multi-plataforma!**)
+Última versão: **[v0.1.5](https://github.com/andre28abr/banana-releases/releases/latest)** (pré-release · **agora multi-plataforma!**)
 
 | Plataforma | Arquivo | Status |
 |---|---|---|
-| 🍎 **macOS** Apple Silicon (M1/M2/M3/M4) | `Banana_0.1.4_aarch64.dmg` | ✅ Estável |
-| 🪟 **Windows** x64 (NSIS installer) | `Banana_0.1.4_x64-setup.exe` | ⚠️ Experimental |
-| 🪟 **Windows** x64 (MSI installer) | `Banana_0.1.4_x64_en-US.msi` | ⚠️ Experimental |
-| 🐧 **Linux** x64 (Debian/Ubuntu) | `Banana_0.1.4_amd64.deb` | ⚠️ Experimental |
-| 🐧 **Linux** x64 (universal AppImage) | `Banana_0.1.4_amd64.AppImage` | ⚠️ Experimental |
-| 🐧 **Linux** Flatpak x86_64 (Intel/AMD) | `Banana_0.1.4_x64.flatpak` | ⚠️ Experimental · **autor testou nessa** |
-| 🐧 **Linux** Flatpak aarch64 (ARM, ex: VM em Mac Apple Silicon) | `Banana_0.1.4_arm64.flatpak` | ⚠️ Experimental |
+| 🍎 **macOS** Apple Silicon (M1/M2/M3/M4) | `Banana_0.1.5_aarch64.dmg` | ✅ Estável |
+| 🪟 **Windows** x64 (NSIS installer) | `Banana_0.1.5_x64-setup.exe` | ⚠️ Experimental |
+| 🪟 **Windows** x64 (MSI installer) | `Banana_0.1.5_x64_en-US.msi` | ⚠️ Experimental |
+| 🐧 **Linux** x64 (Debian/Ubuntu) | `Banana_0.1.5_amd64.deb` | ⚠️ Experimental |
+| 🐧 **Linux** x64 (universal AppImage) | `Banana_0.1.5_amd64.AppImage` | ⚠️ Experimental |
+| 🐧 **Linux** Flatpak x86_64 (Intel/AMD) | `Banana_0.1.5_x64.flatpak` | ⚠️ Experimental · **autor testou nessa** |
+| 🐧 **Linux** Flatpak aarch64 (ARM, ex: VM em Mac Apple Silicon) | `Banana_0.1.5_arm64.flatpak` | ⚠️ Experimental |
 | 🍎 **macOS** Intel | — | ⏳ futuro |
 | 🐧 **Linux** Flatpak no Flathub | — | ⏳ futuro (depende de aprovação) |
 
@@ -28,7 +28,8 @@ Distribuição oficial dos binários do **Banana**, um gestor de notas desktop l
 
 | Versão | Data | Destaques |
 |---|---|---|
-| **[v0.1.4](https://github.com/andre28abr/banana-releases/releases/tag/v0.1.4)** | 2026-05-19 | 🪟🐧 **Primeira release multi-plataforma** (Win/Linux experimental via CI) · 🔐 AAD versionado (parameter downgrade protection) · 🌐 Encoding auto-detect (UTF-8/16/Windows-1252/MacRoman) · 📁 Code folding · 📜 CRYPTO.md · 338 testes |
+| **[v0.1.5](https://github.com/andre28abr/banana-releases/releases/tag/v0.1.5)** | 2026-05-19 | 🐛 **Fix Linux**: nota cripto não volta a mostrar placeholder após unlock · 🔍 **Busca, wikilinks e histórico cripto-aware** (antes não funcionavam em vaults cripto) · ✨ Helper Rust `crypto::decrypt_if_encrypted` · 359 testes (de 338) |
+| [v0.1.4](https://github.com/andre28abr/banana-releases/releases/tag/v0.1.4) | 2026-05-19 | 🪟🐧 **Primeira release multi-plataforma** (Win/Linux experimental via CI) · 🔐 AAD versionado (parameter downgrade protection) · 🌐 Encoding auto-detect (UTF-8/16/Windows-1252/MacRoman) · 📁 Code folding · 📜 CRYPTO.md · 338 testes |
 | [v0.1.3](https://github.com/andre28abr/banana-releases/releases/tag/v0.1.3) | 2026-05-18 | 🔐 Fase 3 cripto (vault inteiro) · 💬 Comentários inline `{? texto}` estilo Acrobat · 🗃️ Múltiplos cofres + recentes · 🍌 Ícone novo · 🛠️ Qualidade open source (ESLint + Clippy + CI + LICENSE/CONTRIBUTING/SECURITY) · 316 testes (de 111) |
 | [v0.1.2](https://github.com/andre28abr/banana-releases/releases/tag/v0.1.2) | 2026-05-17 | 🔐 Notas com senha (Fase 1 do plano de cripto) — AES-256-GCM + Argon2id, design key-slots (LUKS/FileVault style), recovery key obrigatória, formato versionado, 11 testes Rust novos |
 | [v0.1.1](https://github.com/andre28abr/banana-releases/releases/tag/v0.1.1) | 2026-05-17 | Auditoria de segurança (DOMPurify + path traversal fixes) · Export PDF vetorial nativo (NSPrintOperation) · Mermaid · Copy as HTML · Histórico de notas · Apresentação · Wikilinks · 70 testes Vitest |
@@ -55,7 +56,7 @@ A partir da segunda abertura, duplo clique funciona normalmente.
 
 ## 🪟 Instalação no Windows
 
-1. Baixe `Banana_0.1.4_x64-setup.exe` (NSIS — recomendado, mais leve) ou `Banana_0.1.4_x64_en-US.msi`
+1. Baixe `Banana_0.1.5_x64-setup.exe` (NSIS — recomendado, mais leve) ou `Banana_0.1.5_x64_en-US.msi`
 2. Execute o instalador
 3. SmartScreen do Windows Defender vai avisar → clique em **"Mais informações"** → **"Executar mesmo assim"**
 
@@ -68,15 +69,15 @@ A partir da segunda abertura, duplo clique funciona normalmente.
 
 ### Debian/Ubuntu (.deb)
 ```bash
-sudo dpkg -i Banana_0.1.4_amd64.deb
+sudo dpkg -i Banana_0.1.5_amd64.deb
 # Se reclamar de deps faltando:
 sudo apt-get install -f
 ```
 
 ### Qualquer distro (.AppImage)
 ```bash
-chmod +x Banana_0.1.4_amd64.AppImage
-./Banana_0.1.4_amd64.AppImage
+chmod +x Banana_0.1.5_amd64.AppImage
+./Banana_0.1.5_amd64.AppImage
 ```
 
 ### Flatpak (single-file, qualquer distro com Flatpak instalado)
@@ -86,8 +87,8 @@ Escolha o flatpak da arquitetura da sua máquina/VM. Pra descobrir, rode:
 uname -m
 ```
 
-- **`x86_64`** (Intel/AMD comum) → use `Banana_0.1.4_x64.flatpak`
-- **`aarch64`** ou `arm64` (ARM — ex: VMs Linux em Mac Apple Silicon via UTM/Parallels/VMware Fusion) → use `Banana_0.1.4_arm64.flatpak`
+- **`x86_64`** (Intel/AMD comum) → use `Banana_0.1.5_x64.flatpak`
+- **`aarch64`** ou `arm64` (ARM — ex: VMs Linux em Mac Apple Silicon via UTM/Parallels/VMware Fusion) → use `Banana_0.1.5_arm64.flatpak`
 
 ```bash
 # Adicionar Flathub (uma vez só) — precisa do runtime base
@@ -95,7 +96,7 @@ flatpak remote-add --user --if-not-exists flathub \
   https://flathub.org/repo/flathub.flatpakrepo
 
 # Instalar (substitua _x64 por _arm64 se for ARM)
-flatpak install --user Banana_0.1.4_x64.flatpak
+flatpak install --user Banana_0.1.5_x64.flatpak
 
 # Rodar
 flatpak run dev.banana.Banana
@@ -112,8 +113,8 @@ Pra explorar o app sem criar nada do zero, baixe um dos vaults de demonstração
 
 | Arquivo | O que tem |
 |---|---|
-| [`vault-plain.zip`](https://github.com/andre28abr/banana-releases/releases/download/v0.1.4/vault-plain.zip) (21 KB) | 17 notas sem cripto — markdown completo, mermaid, KaTeX, código em 6 linguagens, ABNT |
-| [`vault-encrypted.zip`](https://github.com/andre28abr/banana-releases/releases/download/v0.1.4/vault-encrypted.zip) (54 KB) | Mesmas notas, todas criptografadas (AES-256-GCM + Argon2id) |
+| [`vault-plain.zip`](https://github.com/andre28abr/banana-releases/releases/download/v0.1.5/vault-plain.zip) (21 KB) | 17 notas sem cripto — markdown completo, mermaid, KaTeX, código em 6 linguagens, ABNT |
+| [`vault-encrypted.zip`](https://github.com/andre28abr/banana-releases/releases/download/v0.1.5/vault-encrypted.zip) (54 KB) | Mesmas notas, todas criptografadas (AES-256-GCM + Argon2id) |
 
 **Senha do vault encriptado:** `banana-demo`
 
