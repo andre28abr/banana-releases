@@ -106,6 +106,26 @@ flatpak run dev.banana.Banana
 
 ---
 
+## 🍌 Vaults de exemplo
+
+Pra explorar o app sem criar nada do zero, baixe um dos vaults de demonstração:
+
+| Arquivo | O que tem |
+|---|---|
+| [`vault-plain.zip`](https://github.com/andre28abr/banana-releases/releases/download/v0.1.4/vault-plain.zip) (21 KB) | 17 notas sem cripto — markdown completo, mermaid, KaTeX, código em 6 linguagens, ABNT |
+| [`vault-encrypted.zip`](https://github.com/andre28abr/banana-releases/releases/download/v0.1.4/vault-encrypted.zip) (54 KB) | Mesmas notas, todas criptografadas (AES-256-GCM + Argon2id) |
+
+**Senha do vault encriptado:** `banana-demo`
+
+Como usar:
+1. Descompacte o `.zip` numa pasta qualquer
+2. No Banana: **Arquivo → Abrir Cofre…** e selecione a pasta
+3. (Encrypted) Ao clicar numa nota, digite `banana-demo`
+
+> A senha é pública de propósito — é demo. Use senha forte pra notas reais.
+
+---
+
 ## 🐛 Reportar bugs
 
 Por enquanto, contate o autor diretamente. Quando o repositório de código-fonte virar público (planejado pra v0.5+), as issues abrem lá.
