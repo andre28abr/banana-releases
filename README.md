@@ -39,6 +39,28 @@ Distribuição oficial dos binários do **Banana**, um gestor de notas desktop l
 
 ## 🍎 Instalação no macOS
 
+### Via Homebrew (recomendado)
+
+```bash
+brew tap andre28abr/banana
+brew trust andre28abr/banana
+brew install --cask banana
+```
+
+Depois é só abrir pelo Spotlight ou `open -a Banana`. Atualizar depois:
+
+```bash
+brew upgrade --cask banana
+```
+
+Homebrew já limpa a flag de quarantine automaticamente — não precisa do clique-direito → Abrir da primeira vez.
+
+Detalhes e alternativas no [tap oficial](https://github.com/andre28abr/homebrew-banana).
+
+> **Requisitos**: Apple Silicon (M1/M2/M3/M4) + macOS Ventura (13) ou superior. Intel Mac ainda não suportado.
+
+### Manual (Apple Silicon ou Intel via download direto)
+
 1. Baixe o `.dmg` da [última release](https://github.com/andre28abr/banana-releases/releases/latest)
 2. Abra o DMG e arraste **Banana** para a pasta **Aplicativos**
 3. Na **primeira vez**, abra com **clique direito → Abrir**
