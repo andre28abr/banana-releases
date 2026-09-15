@@ -2,7 +2,7 @@
 
 Distribuição oficial dos binários do **Banana**, um gestor de notas desktop local-first.
 
-> Esse repositório só contém **builds** e **changelog**. O código-fonte vive em outro repositório (privado por enquanto, vai virar público quando estabilizar).
+> Este repositório contém só os **builds** e o **changelog**. O código-fonte é mantido em repositório privado; a instalação é pelo Homebrew ou pelos binários abaixo.
 
 ---
 
@@ -22,7 +22,7 @@ Distribuição oficial dos binários do **Banana**, um gestor de notas desktop l
 | 🍎 **macOS** Intel | — | ⏳ futuro |
 | 🐧 **Linux** Flatpak no Flathub | — | ⏳ futuro (depende de aprovação) |
 
-> ⚠️ **Experimental** = build via CI verde mas sem teste manual em Windows/Linux pelo autor. Reporte bugs [aqui](https://github.com/andre28abr/banana/issues).
+> ⚠️ **Experimental** = build via CI verde mas sem teste manual em Windows/Linux pelo autor. Reporte bugs [aqui](https://github.com/andre28abr/banana-releases/issues).
 
 ### Histórico de versões
 
@@ -163,6 +163,10 @@ Por enquanto, **MIT** (sob revisão). Veja `LICENSE` em cada release.
 
 ## 👤 Autor
 
-**André Augusto Azarias De Souza** — [github.com/andre28abr](https://github.com/andre28abr)
+**André Augusto Azarias de Souza** · DPO / Encarregado de Dados · Compliance & GRC · Privacy Engineering
 
-DPO / especialista em compliance e privacidade em transição pra desenvolvimento. O Banana é o segundo projeto público — o primeiro é [SentinelBR](https://github.com/andre28abr) (também em desenvolvimento).
+Gestor com **18 anos de atuação como Gerente Administrativo e Encarregado de Dados (DPO)** em organização do setor de saúde suplementar, ambiente regulado pela ANS e pela LGPD. Desde 2025 conduz, como **product owner técnico**, projetos open-source de segurança e privacidade em Python, Go, Rust e Swift, com a codificação orquestrada por assistentes de IA generativa sob sua direção e revisão. O banana leva o princípio de minimização de dados para o bloco de notas: local-first, sem conta, sem servidor, com vault cifrado.
+
+Outros projetos: [SentinelBR](https://github.com/andre28abr/SentinelBR-platform) · [VigiaOS](https://github.com/andre28abr/VigiaOS) · [Plataforma LGPD](https://github.com/andre28abr/lgpd-platform) · [Peapod](https://github.com/andre28abr/Peapod) · [Uptend](https://github.com/andre28abr/Uptend)
+
+→ [LinkedIn](https://linkedin.com/in/andreaugusto-azariasdesouza) · [Perfil no GitHub](https://github.com/andre28abr)
